@@ -12,7 +12,7 @@ const errorHandlerMiddleware = require("./middleware/error-handler");
 
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 10, //  Limit each IP to 10 requests per `window` (here, per 5 minutes)
+  max: 150, //  Limit each IP to 100 requests per `window` (here, per 5 minutes)
   message: {
     msg: "Too many request from this IP, please try again after 15 minutes",
   },

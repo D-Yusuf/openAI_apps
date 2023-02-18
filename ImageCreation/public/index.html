@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generate Images</title>
+    <link rel="icon" href="./icon.png">
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    <link rel="stylesheet" href="output.css">
+
+    <!-- font awsome icons -->
+    <script src="https://kit.fontawesome.com/206351b6e9.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="min-h-screen flex justify-center bg-baby-powder text-raisen-black font-bold">
+    <!-- CONTAINER -->
+    <div class="container flex flex-col justify-center items-center">
+      <!-- title -->
+      <div class="title text-center w-full">
+        <h1 class="text-2xl">Image Creation using Ai (DALL-E) </h1>
+      </div>
+      <!-- loading circle -->
+      <div class="loader hide">
+        <div class="loading rounded-full animate-spin w-28 h-28 border-t-raisen-black border-8 border-baby-powder"></div>
+      </div>
+      <!-- Input field -->
+      <div class="mt-10">
+        <form id="text-form">
+          
+          <textarea class=" rounded-sm border border-[#000] px-1 max-h-[100px] " id="text-input" rows="5" cols="30" required placeholder="Prompt:" spellcheck="false"></textarea>
+          <button class="btn" type="submit">Create Image</button>
+        </form>
+      </div>
+      <!-- img output -->
+      <div class="ml-10">
+        <img id="image-frame" class="max-h-[500px]  mt-5 lg:mt-0" src="./pc.webp" />
+        
+      </div>
+    </div>
+    <!--// CONTAINER //-->
+
+    <div class="error-msg absolute text-[red] text-2xl"></div>
+    <footer class="absolute bottom-1">
+      <ul class="flex gap-10">
+        <li>
+          <a class="underline text-honolulu-blue" target="_blank" href="./about.html">about</a>
+        </li>
+        <li>
+          <a class="underline text-honolulu-blue" target="_blank" href="https://openai.com/dall-e-2/">source</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

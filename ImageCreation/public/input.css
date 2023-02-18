@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .btn{
+        @apply bg-raisen-black text-baby-powder p-2 mt-3 rounded-lg shadow-[2px_2px_1px_1px_black] active:translate-y-1 transition;
+    }
+    li{
+        @apply underline list-item;
+    }
+}
